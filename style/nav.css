@@ -1,0 +1,92 @@
+#navbox{
+    border: 2px solid blue;
+    height: 50px;
+    display: flex;
+    justify-content: space-around;
+    background-color: blue;
+    
+}
+.navTitle{
+    /* margin-top: 14px; */
+    padding: 14px;
+    color: white;
+    font-family: 'Times New Roman', Times, serif;
+}
+.navTitle:hover{
+    background-color: red;
+    cursor: pointer;
+}
+
+/* <<<<<<<<<<<<<<<<<<<<<Mobile and Tablets>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> */
+#mobileNavbar{
+     border: 2px solid rgb(206, 11, 53);
+    /* height: 400px; */
+     width: 40%;
+     margin-left: 30px;
+     display:none;
+     background-color: blue;
+
+     /* position: fixed;
+     top: 0px;
+     bottom: 0px;
+     right: 0px;
+     transition-duration: 100ms; 
+    animation-timing-function:ease-in-out; 
+    flex-direction: column; */
+    
+}
+#mobileNavbar:hover{
+    display: block;
+}
+
+.smartmobile{
+    color: white;
+    margin-left: 30px;
+}
+img{
+    background-color: blue;
+    border: 1px solid red;
+    max-width: 40%;
+    min-width: 30%;
+}
+
+/* <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<Televisions>>>>>>>>>>>> */
+#televisionNavbar{
+    border: 2px solid rgb(206, 11, 53);
+    /* height: 400px; */
+    width: 30%;
+    margin-left: 30px;
+     display:flex;
+     background-color: blue;
+}
+.television{
+    color: white;
+    margin-left: 30px;
+}
+
+/* <<<<<<<<<<<<<<<<<<<<headphones>>>>>>>>>>>>>> */
+#headphonesNavbar{
+    border: 2px solid rgb(206, 11, 53);
+    /* height: 400px; */
+    width: 60%;
+    margin-left: 30px;
+     display:flex;
+     background-color: blue;
+}
+.headphones{
+    color: white;
+    margin-left: 30px;
+}
+/* <<<<<<<<<<<<<<<<<<<<<<<HomeApplinces */
+#homeNavbar{
+    border: 2px solid rgb(206, 11, 53);
+    /* height: 400px; */
+    width: 60%;
+    margin-left: 30px;
+     display:flex;
+     background-color: blue;
+}
+.home{
+    color: white;
+    margin-left: 30px;
+}
