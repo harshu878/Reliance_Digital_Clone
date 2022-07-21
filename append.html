@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #append{
+
+            border: 1px solid red;
+            height: 800px;
+            display: flex;
+        }
+        #sidebar{
+            box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 3px 0px, rgba(0, 0, 0, 0.06) 0px 1px 2px 0px;
+            /* border: 1px solid blue; */
+            width: 15%;
+        }
+        #filterdiv{
+            height: 6%;
+            /* border: 1px solid green; */
+            text-align: center;
+        }
+        #minmax{
+            /* border: 1px solid rebeccapurple; */
+            display: flex;
+        }
+        #minprice,#maxprice{
+            width: 30%;
+            margin-left: 10px;
+            font-size: large;
+        }
+        #minmaxbutton{
+            background-color: blue;
+            font-size: large;
+            color: white;
+            width: 30%;
+            margin-left: 10px;
+            border: none;
+        }
+        
+       .one{
+        display: flex;
+        /* border: 1px solid red; */
+
+       }
+       .shadow{
+        box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 3px 0px, rgba(0, 0, 0, 0.06) 0px 1px 2px 0px;
+       }
+       /* <<<<<<<<<<<<<<<<<<<<<<<<<<<<sidebar is over here>>>>>>>>>>>> */
+        #showproduct{
+            width: 100%;
+            height: 100%;
+        }
+        #uppercountbox{
+            border: 1px solid blue;
+            height: 50px;display: flex;
+            width: 100%;
+            justify-content:space-between;
+        }
+        #sortdiv{
+            border: 1px solid blue;
+            margin-right: 30%;
+            padding-top: 1%;
+        }
+        #productcount{
+            margin-left: 3%;
+        }
+        /* <<<<<<<<<<<<<<append wala div>>>>>>>>>>>>>>>> */
+            #upperbox{
+                display: grid;
+                grid-template-columns: repeat(4,1fr);
+                border: 1px solid green;
+                gap: 20px;
+            }
+            .mainbox{
+                height: 500px;
+                /* border: 1px solid red; */
+                /* padding-left: 12px; */
+                margin-top: 10px;
+                margin-left: 12px;
+                margin-bottom: 12px;
+                box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px 2px;
+            }
+            .lowerdiv{
+                display: flex;
+                
+            }
+            .imgdiv{
+                height: 60%;
+            }
+            img{
+                height: 100%;
+            }
+             .para{
+                color: blue;
+                padding-left: 12px; 
+             }
+             .rupees{
+                color: blue;
+                padding-left: 12px; 
+             }
+             .offersavailable{
+                color: green;
+                font-size: 1px;
+                padding-left: 12px; 
+             }
+             .offer{
+                color: green;
+                font-size: 12px;
+                border: none;
+                border-radius: 20px;
+                background-color: rgb(173, 234, 173);
+             }
+            /* .lowerdiv{
+                gap: 30px;
+                padding-top: 30px;
+                padding-left: 20px;
+                font-size: large;
+                 
+            } */
+            .com{
+                width: 50%;
+                box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px 2px;
+                font-size: 20px;
+                padding: 10px;
+                
+                margin-top: 30px;
+            }
+
+    </style>
+</head>
+<body>
+    <div id="append">
+        <div id="sidebar">
+             <div id='filterdiv' class="shadow"><h3>FILTERS</h3></div>
+              <div id="pricefilter" class="shadow">
+                <h4>Price</h4>
+                 <div id="minmax">
+                    <input id="minprice" type="number" placeholder="Min"/>
+                    <input id="maxprice" type="number" placeholder="Max"/>
+                    <button id="minmaxbutton">G0</button>
+                </div>
+            </div>
+            <div id="Availability" class="shadow">
+                  <h4>Availability</h4>
+                  <div class="one">
+                  <input type="checkbox" id="checkbox"/>
+                  <h4>Exclude out of Stock</h4>
+                </div>
+            </div>
+            <div id="Category" class="shadow">
+                <h4>Category</h4>
+                <div class="one">
+                <input type="checkbox" id="checkbox"/>
+                <h4>Smartphones</h4>
+              </div>
+          </div>
+          <div id="Brand" class="shadow">
+            <h4>Brand</h4>
+            <div class="one">
+            <input type="checkbox" id="checkbox"/>
+            <h4>One Plus</h4>
+          </div>
+      </div>
+        </div>
+        <!-- <<<<<<<<<<<<<<<<<<<<<<sidebar is over here>>>>>>>>>>> -->
+            <div id="showproduct">
+                <div id="uppercountbox">
+                  <h3  id="productcount">(Showing 4 products)</h3>
+                  <div id="sortdiv">Sort by:
+                    <select name="" id="sort">
+                        <option value="">Relevance</option>
+                        <option value="LTH">Price(Low-High)</option>
+                        <option value="HTL">Price(High-Low)</option>
+                    </select>
+                  </div>
+                </div>
+
+                <div id="upperbox">
+                    <div class="mainbox">
+                    <div class="imgdiv">
+                        <img src="https://www.reliancedigital.in/medias/One-Plus-Nord2T-Mobile-Phone-492850716-i-1-1200Wx1200H-300Wx300H?context=bWFzdGVyfGltYWdlc3wxOTUxMHxpbWFnZS9qcGVnfGltYWdlcy9oNmQvaDc3Lzk4NTMzNTgxMTI3OTguanBnfGIyMzI1OGExYWY3ZDNkNTYxYWZhNmMwMGI3MmMwMDIwZDlhMjFhMzZjNWZhOTE3YjA2MzBmYjFmNTY5ODgzY2I" alt=""/>
+                    </div>
+                    <p class="para">OnePlus Nord 2T 5G 256GB, 12GB RAM, Gray Shadow, Mobile Phone</p>
+                    <h3 class="rupees">₹33,999.00</h3>
+                    <div class="offersavailable">
+                    <button class="offer">OFFERS AVAILABLE</button>
+                    <button class="offer">NEW LAUNCH</button>
+                   </div>
+                   <div class="lowerdiv">
+                    <div class="com">Compare</div>
+                    <div class="com">Wishlist</div>
+                   </div>
+                  </div>
+                </div>
+               
+            </div>
+
+
+
+    </div>
+</body>
+</html>
+<script src="./scripts/append.js" type="module"></script>
