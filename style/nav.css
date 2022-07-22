@@ -1,0 +1,105 @@
+#navbox{
+    border: 2px solid blue;
+    height: 50px;
+    display: flex;
+    justify-content: space-around;
+    background-color: blue;
+    
+}
+a{
+    color: white;
+}
+.navTitle{
+    /* margin-top: 14px; */
+    padding: 14px;
+    color: white;
+    font-family: 'Times New Roman', Times, serif;
+}
+.navTitle:hover{
+    background-color: red;
+    cursor: pointer;
+}
+
+/* <<<<<<<<<<<<<<<<<<<<<Mobile and Tablets>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> */
+#mobileNavbar{
+     border: 2px solid rgb(206, 11, 53);
+     
+     width: max-content;
+     margin-top: 20px;
+     margin-left: 30px;
+     display:none;
+     background-color: blue;
+}
+#mobilehover:hover #mobileNavbar{
+    display: flex;
+    position: absolute;
+}
+
+.smartmobile{
+    color: white;
+    margin-left: 30px;
+}
+img{
+    background-color: blue;
+    border: 1px solid red;
+    max-width: 40%;
+    min-width: 30%;
+}
+
+/* <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<Televisions>>>>>>>>>>>> */
+#televisionNavbar{
+    border: 2px solid rgb(206, 11, 53);
+    /* height: 400px; */
+    width:max-content;
+     margin-left: 30px;
+     padding: 10px;
+     display: none;
+     background-color: blue;
+     margin-top: 20px;
+}
+#tele:hover #televisionNavbar{
+    display:flex ;
+    position: absolute;
+}
+.television{
+    color: white;
+    margin-left: 30px;
+}
+
+/* <<<<<<<<<<<<<<<<<<<<headphones>>>>>>>>>>>>>> */
+#headphonesNavbar{
+    border: 2px solid rgb(206, 11, 53);
+    /* height: 400px; */
+    width: max-content;
+    margin-left: 30px;
+    margin-top: 20px;
+     display: none;
+     background-color: blue;
+}
+#headph:hover #headphonesNavbar{
+    display: flex;
+    position: absolute;
+}
+
+.headphones{
+    color: white;
+    margin-left: 30px;
+}
+/* <<<<<<<<<<<<<<<<<<<<<<<HomeApplinces */
+#homeNavbar{
+    border: 2px solid rgb(206, 11, 53);
+    /* height: 400px; */
+    width: max-content;
+    margin-left: 30px;
+     display:none;
+     background-color: blue;
+     margin-top: 20px;
+}
+#home:hover #homeNavbar{
+      display: flex;
+      position: absolute;
+}
+.home{
+    color: white;
+    margin-left: 30px;
+}
