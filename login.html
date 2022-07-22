@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles/header.css">
+    <link rel="stylesheet" href="./styles/footer.css">
+    <title>Document</title>
+    <link rel="stylesheet" href="login.css">
+</head>
+<body>
+    <header></header>
+    <div id="cont">
+    <p class="login">Login</p>
+    <hr>
+    <div id=main>
+    <div class="vertical">
+    <form>
+        <label for="">Email</label>
+        <br>
+        <input type="text" id="email">
+        <br><br>
+        <label for="">Password</label>
+        <br>
+        <input type="text" id="password">
+    </form>
+    <div id="forgot">
+        <p>Forgot password?</p>
+    </div>
+    
+    <button>Continue</button>
+    <div id="char">
+        <p>Don't have an account yet?</p>
+        <a href="Register.html" class="reg"><p>REGISTER</p></a>
+    </div>
+    </div>
+    <div>
+        <p class="or">OR</p>
+    </div>
+ <div class="box2">
+     <p>Login Using</p>
+    <img src="https://static.businessworld.in/article/article_extra_large_image/1553420439_O4KenA_fb.jpeg" alt="" class="image">
+    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRgpALMedi9-917o1f68SR7WMpBm3pPP8LQxA&usqp=CAU" alt="" class="image">
+    </div>
+    </div>
+    </div>
+    <footer></footer>
+    
+</body>
+</html>
+<script>
+    //api under construction
+    
+    // document.querySelector("button").addEventListener("click",login);
+    // var regduser=JSON.parse(localStorage.getItem("userdatabase"));
+    
+    // function login(){
+    //     var email=document.querySelector("#email").value;
+
+    //     var password=document.querySelector("#password").value;
+
+    //     let user_found=false;
+    //     for(var i=0;i<regduser.length;i++){
+    //         if(regduser[i].emailId===email && regduser[i].pass===password){
+    //             user_found=true;
+    //             window.location.href="index.html";
+
+    //         }
+    //     }
+    //     if(user_found===false){
+    //     alert("wrong credientials");
+    //     }
+    // }
+
+</script>
+<script type="module">
+    import navbar from "./components/navbar.js"
+    import footer from "./components/footer.js"
+    document.querySelector("header").innerHTML=navbar();
+    document.querySelector("footer").innerHTML=footer();
+
+</script>

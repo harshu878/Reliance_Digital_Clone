@@ -1,0 +1,79 @@
+#cont{
+    border:1px solid silver;
+    border-radius: 8px;
+    height:400px;
+    width:1000px;
+    margin:auto;
+    margin-top: 90px;
+    box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px 2px;
+
+}
+.login{
+    color: black;
+    font-weight: bolder;
+    font-size: 20px;
+    margin-left: 30px;
+}
+form{
+    margin-top: 40px;
+    margin-left: 30px;
+}
+label{
+    color:blue
+}
+input{
+    height:37px;
+    width:400px;
+}
+#forgot>p{
+    margin-left: 320px;
+    font-weight: bolder;
+}
+button{
+    color:whitesmoke;
+    font-weight: bolder;
+    height:39px;
+    width:410px;
+    margin-left: 30px;
+    background-color: rgb(228,37,41);
+    font-size: 20px;
+    border:none;
+    border-radius: 3px;
+
+}
+#char{
+    display: flex;
+    justify-content: center;
+     width:440px;
+}
+.reg{
+    color:rgb(228,37,41);
+    margin-left: 8px;
+    font-weight: bolder;
+    text-decoration: none;
+}
+
+     
+     #main{
+         display:flex;
+     }
+     .box2{
+         
+         height:300px;
+         width:200px;
+         margin-left: 180px;
+         justify-content: center;
+     }
+     .image{
+         width:120px;
+         height:70px;
+     }
+     .box2>p{
+         font-weight: bolder;
+         margin-top: 100px;
+     }
+     .or{
+         margin-left: 130px;
+         margin-top: 130px;
+     }
+     
