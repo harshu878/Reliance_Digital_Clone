@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./components/test.css">
+    <style>
+         /* #product_app{
+            display: flex;
+            gap: 10px;
+         } */
+        /* #filter{
+            width: 20%;
+            border: 1px solid black;
+        } */
+        #show_product{
+            display: grid;
+            grid-template-columns: repeat(4,1fr);
+            grid-template-rows: auto;
+            gap: 10px;
+            /* width: 80%; */
+        }
+
+        #show_product p{
+            font-family: sans-serif;
+        }
+         #show_product div{
+           box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+           padding: 20px;
+           /* width:100%; */
+         }
+          #show_product img{
+            width: 100%;
+          }
+
+        #show_product button {
+            border: none;
+            padding: 10px 20px;
+            border-radius: 15px;
+            box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+            cursor: pointer;
+         }
+
+    </style>
+</head>
+<body>
+<div id="navbar">
+  <div id="header">
+    <div class="store">
+       <img src="https://png.pngtree.com/png-vector/20191110/ourlarge/pngtree-location-vector-icon-white-transparent-background-png-image_1978014.jpg" alt="" class="locationlogo">
+       <p class="position">Find a store</p>
+       <p class="position">Buying Guides</p>
+       <p class="position">Contact Us</p>
+   </div>
+   <div class="middlebox">
+   <a href="./index.html">
+   <div class="reliancelogo">
+           <img src="https://www.reliancedigital.in/build/client/images/loaders/rd_logo.svg" alt="">
+       </div>
+       </a>
+
+       <div id="searchbar">
+           <input type="search" placeholder="Find Your favorite Products" id="q">
+         
+           </div>
+            <div class="logincart">
+      <a href="./cart.html"><img src="https://www.freepnglogos.com/uploads/shopping-cart-png/shopping-cart-svg-png-icon-download-28.png" alt="" class="lgp">
+       <p class="lgp">Cart</p></a>
+       <a href="./login.html"> <img src="https://simg.nicepng.com/png/small/136-1366211_group-of-10-guys-login-user-icon-png.png" alt="" class="lgp">
+       <p class="lgp">Login</p></a>
+   </div>
+   </div>
+</div>
+<!-- <div id="nav"></div> -->
+
+    <div id="product_app">
+        <div id="filter">
+              <h3>TELIVISION</h3>
+            <p>(Showing 1- 24 products of 116 products)</p>
+        </div>
+        <div id="show_product">
+          
+        </div>
+    </div>
+
+    <div id="footer">
+      <div class="cont1">
+    <div>
+       <h4>PRODUCT CATAGORIES</h4> 
+        <p>Smartphones</p>
+        <p>Laptops</p>
+        <p>DSLR Cameras</p>
+        <p>Televisions</p>
+        <p>Air conditioners</p>
+        <p>Refrigerators</p>
+        <p>Kitchen Appliances</p>
+        <p>Accessories</p>
+        <p>Personal Care & Grooming</p>
+    </div>
+    <div>
+       <h4>SITE INFO</h4> 
+       <p>About Reliance Digital</p>
+       <p>resQ Services</p>
+       <p>Site Map</p>
+       <p>Gift Cards</p>
+       <p>Corporate Enquires</p>
+       <p>Contact Us</p>
+    </div>
+    <div>
+        <h4>RESOURCE CENTER</h4>
+        <p>Product Reviews</p>
+        <p>Buying Guides</p>
+        <p>How Tos</p>
+        <p>Featured Stories</p>
+        <p>Event & Happenings</p>
+    </div>
+    <div>
+       <h4>POLICIES</h4>
+       <p>Terms of use</p>
+       <p>Cancellation and Retruns</p>
+       <p>Privacy Policy</p>
+       <p>E-waste Policy</p>
+       <p>EMI Terms and Conditions</p>
+       <p>Pricing and Payments Policy</p>
+       <p>Delivery & Shipping Policy</p>
+       <p>JioMart Maha Cashback T&C</p>
+    </div>
+</div>
+<div class="cont2">
+    <div>
+        <h4>FOLLOW US</h4>
+        <a href="https://www.facebook.com"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTE8IpEU3sOxQxNjMw3VAoSWsekRpvgOvjziQ&usqp=CAU" alt="" class="socialmedialogo"></a>
+        <a href="https://www.twitter.com"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTQuQ1WZVJ3GUDCgjBkdoi29hZKhG2jqSJm2A&usqp=CAU" alt="" class="socialmedialogo"></a>
+        <a href="https://www.youtube.com"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS49-2NdYCnhN07iUFqsG_ExFiP3QjH9s9naA&usqp=CAU" alt="" class="socialmedialogo"></a>
+        </div>
+      
+    <div>
+        <h4>EXPERIENCE RELIANCE DIGITAL APP ON MOBILE</h4> 
+       <img src="https://www.reliancedigital.in/build/client/images/google_play_store.png" alt="" class="image">
+       <img src="https://www.reliancedigital.in/build/client/images/ios_app_store_icon.png" alt="" class="image">
+    </div>
+</div>
+      <div id="cont3">©2022 Reliance Digital. All Rights Reserved</div>
+    </div>
+</body>
+</html>
+
+
+<script >
+    
+//     let data = []
+// fetch("http://localhost:3000/")
+// .then((response)=>{
+//     return response.json()
+// }).then((res)=>{
+//     data = res
+// })
+
+// const getInput = () =>{
+//     let input = document.getElementById("input").value
+//     let tempData = [...data]
+//     console.log(tempData)
+//     tempData = tempData.filter(function(item){
+//         return Object.keys(item) == input
+//     })
+//     console.log(tempData);
+// }
+
+      // import footer from "./components/footer.js"
+      // import navbar from "./components/navbar.js"
+      // // import navs from "./components/importnav.js"
+      // document.querySelector("#navbar").innerHTML=navbar();
+      // document.querySelector("#footer").innerHTML=footer();
+      // navs().then((data)=>{
+      //   document.getElementById('nav').innerHTML = data
+      // })
+
+let tvdata = [
+      {
+        image:
+          "https://www.reliancedigital.in/medias/ONEPLUS-32Y1-TV-491895010-i-1-1200Wx1200H-300Wx300H?context=bWFzdGVyfGltYWdlc3wyMjIzMXxpbWFnZS9qcGVnfGltYWdlcy9oNjkvaDE0Lzk4MTAwNTg5MDM1ODIuanBnfGFiZjk3NDA1MzY1ODQwYjc2OTZkMzY4OTI1Y2RmOWM3OTI4NTE1MTlkMDFlOTUwYmZkM2U5MTVlYmIyZGFlYzg",
+        title: "ONEPLUS 81.28 cm (32 inch) HD Smart LED TV",
+        price: "Rs 13,999",
+      },
+
+      {
+        image:
+          "https://www.reliancedigital.in/medias/Kodak-32HDX7XPRO-Television-492166141-i-1-1200Wx1200H-300Wx300H?context=bWFzdGVyfGltYWdlc3w4MzcxOHxpbWFnZS9qcGVnfGltYWdlcy9oNGUvaGI4Lzk1MTE0NzEzNDk3OTAuanBnfDE3MTQ4OGE5OWIzNWUwNjRkZDE0OTRkNTM3MDhjZTAwOGVjYTc4OWZjNzQ0MTdhNzczYzQ5ZTgyYWE2ODRlYzI",
+        title: "Kodak 80 cm (32 inch) HD Ready LED Smart TV",
+        price: "Rs 11,499",
+      },
+
+      {
+        image:
+          "https://www.reliancedigital.in/medias/TCL-32S5201-Smart-TV-492403797-i-1-1200Wx1200H-300Wx300H?context=bWFzdGVyfGltYWdlc3wzNTU3MHxpbWFnZS9qcGVnfGltYWdlcy9oNjQvaDZmLzk4MzU0MDkzNDI0OTQuanBnfGViMTUxYmE0YmU4YzUyODU5MzM2ZTY2NjhjZjc1YTBhNGI5OWQ0OWNiYjg0OTkyYTlhMmI0ZGQyZDkxOWQwN2I",
+        title: "TCL 81.28 cm (32 inch) 2Yr Warranty HD Android Smart",
+        price: "Rs 13,990",
+      },
+
+      {
+        image:
+          "https://www.reliancedigital.in/medias/Realme-Realme-32-Televisions-491973484-i-1-1200Wx1200H-300Wx300H?context=bWFzdGVyfGltYWdlc3w4MTc4M3xpbWFnZS9qcGVnfGltYWdlcy9oOGYvaGQ3Lzk0NzU5NzIxNjk3NTguanBnfDgxZmQwM2JmNTJhM2EwYTcxZTViNzA5YjkzNWVmZjJiMjg4OTM4NGVkZWM2ODA2ZGQ4OTg1ZjAzOTNiNjVlMjc",
+        title: "Realme 80 cm (32 inch) HD Ready LED Smart TV",
+        price: "Rs 14,999",
+      },
+
+      {
+        image:
+          "https://www.reliancedigital.in/medias/Hisense-32A4G-Smart-Television-492338740-i-1-1200Wx1200H-300Wx300H?context=bWFzdGVyfGltYWdlc3w1NTUzMHxpbWFnZS9qcGVnfGltYWdlcy9oMzQvaGVkLzk3Nzk2NjE5NjMyOTQuanBnfGVkNTA5YWE2NmZlMjNhZTRmNzY1NzE4YjU0NGRhMzc4MjZhYjM0ZmFkMGEyMmE4YTBhZGM2ZWUzMzJiZGZmOTk",
+        title: "Hisense 80 cm (32 inch) 2Yr Warranty HD Smart LED TV",
+        price: "Rs 13,990",
+      },
+
+      {
+        image:
+          "https://www.reliancedigital.in/medias/Sansui-JSW32ASHD-Televisions-491973449-i-1-1200Wx1200H-300Wx300H?context=bWFzdGVyfGltYWdlc3wzNDY0NHxpbWFnZS9qcGVnfGltYWdlcy9oZGEvaDI2Lzk4NTE0MTExMzY1NDIuanBnfDNlMGMzYzQ5OGUzMWNmZDFiZDg5OTY3N2I2ZmU0YTdiODg2NDkwZGJkNTMwYmQxNjcyZjcwNWY0YmE0Y2NhZjI",
+        title: "Sansui Prime Series 80 cm (32 inch) HD",
+        price: "Rs 12,999",
+      },
+
+      {
+        image:
+          "https://www.reliancedigital.in/medias/Toshiba-32V35KP-Smart-LED-TV-492796720-i-1-1200Wx1200H-300Wx300H?context=bWFzdGVyfGltYWdlc3wxMDgxODF8aW1hZ2UvcG5nfGltYWdlcy9oMjMvaGQ0Lzk4MTU4MTIzNDE3OTAucG5nfDI1NmI4ZjUzMTZkYTQ5NTUzMDMxNzczYTlhNzBhYmE0ZDI3ZTQ3ZGE2ZTAwMWMwYzc0ZTE2MWJlYjM3Njc0ZDk",
+        title: "Toshiba 80 cm (32 inch) HD Ready Smart",
+        price: "Rs 14,999",
+      },
+
+      {
+        image:
+          "https://www.reliancedigital.in/medias/IFFALCON-32F52-Televisions-492403800-i-1-1200Wx1200H-300Wx300H?context=bWFzdGVyfGltYWdlc3w0OTU5OXxpbWFnZS9qcGVnfGltYWdlcy9oODcvaDc0Lzk3MjcxMzgxMzYwOTQuanBnfDM1N2Q4MTYxMTcyZWMwZjIyM2EzMWJkNTA0OGE5YTQ4OGM2MTlkMDFhYzQyYzRkM2E3MDFlYzQ3MWJhYWQ0YjM",
+        title: "IFFALCON 81.28 cm (32 inch) HD Android Smart TV",
+        price: "Rs 12,999",
+      },
+
+      {
+        image:
+          "https://www.reliancedigital.in/medias/Sony-KD-32W830K-IN5-Television-492912672-i-1-1200Wx1200H-300Wx300H?context=bWFzdGVyfGltYWdlc3wzMDgzOHxpbWFnZS9qcGVnfGltYWdlcy9oMzYvaDQ5Lzk4Mjg5NTY1Njk2MzAuanBnfDM5ODQ0OTQ1MGVjYjZkYThjN2VjNzJjNmZjY2U5MmE2YWU2N2IwZjNiODc3Njg4OWM4NTUzYjA0YjZiMzE3NmQ",
+        title: "Sony 81.28 cm (32 Inch) HD Smart Android TV",
+        price: "Rs 28,999",
+      },
+
+      {
+        image:
+          "https://www.reliancedigital.in/medias/BPL-32H-B4000-TV-492338719-i-1-1200Wx1200H-300Wx300H?context=bWFzdGVyfGltYWdlc3w1MDg4N3xpbWFnZS9qcGVnfGltYWdlcy9oOTQvaDRkLzk4MzI4NTg5NDM1MTguanBnfGIyM2UwZmQ5NzQ3OGEzMzQ0YzY1ZTRkZTZkNjc1NzY3Yzg4MDkxOGFkMDFlMjMzYTFjYjNkM2ZhMWQwM2YyNjA",
+        title: "BPL 80 cm (32 inch) HD Ready LED Android Smart TV",
+        price: "Rs 13,990",
+      },
+    ]
+
+    // let displaydata=(data)=>
+    // {
+        tvdata.forEach( (elem)=> {
+
+            var box = document.createElement("div")
+
+            var img1 = document.createElement("img")
+            img1.setAttribute("src", elem.image)
+
+            var p = document.createElement("p")
+            p.innerText = elem.title
+            p.style.color="blue"
+
+            var p1 = document.createElement("p")
+            p1.innerText = elem.price
+
+            var btn = document.createElement("button")
+            btn.innerText = "Add to cart"
+            btn.addEventListener("click", function(){
+                 cartls(elem)
+            })
+            btn.style.color="white"
+            btn.style.backgroundColor="red"
+            box.append(img1, p, p1, btn)
+            document.getElementById("show_product").append(box)
+        });
+    // }
+    // displaydata (data)
+
+</script>
