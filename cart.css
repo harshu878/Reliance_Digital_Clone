@@ -1,0 +1,156 @@
+
+        
+        #chkt{
+            background-color: #e42529;
+            color: white;
+            width: 368px;
+            height: 36px;
+            border: none;
+            border-radius: 2px;
+            padding: 0px 12px;
+            cursor: pointer;
+        }
+        #checkout{
+            height: 300.6px;
+            width: 368.66px;
+            padding: 0px 16px;
+            /* border: 1px solid black; */
+            margin-left: 1000px;
+            /* margin-top: -900px; */
+            
+        }
+      
+        #cart>#box>div>img{
+            height: 113px;
+            width: 113px; 
+
+        }
+      
+        /* #cart>div{
+            display: flex;
+            width: 828px;
+            height: 216.1px;
+            padding: 12px;
+        } */
+
+        #price{
+            color: #000000;
+            font-style:18px  Roboto,"system-ui",sans-serif;
+        }
+        #details{
+            margin-top: 20px;
+            height: 241px;
+            width: 368px;
+            border: 1px solid gray;
+            margin: 16px -16px 0px;
+            margin-left: 2px;
+        }
+        #apply{
+            height: 48px;
+            width: 366px;
+            padding: 0px 16px;
+            margin-top: 10px;
+        }
+        #apply>input{
+            height: 28px;
+            width: 250px;
+        }
+        #a{
+            height: 33px;
+            width: 80px;
+            padding: 0px 4px;
+            margin-left: -4px;
+            color: #1774EF;
+            background-color: white;
+            /* font:11 px Roboto,"system-ui",sans-sarif; */
+            
+        }
+        #pay{
+            display: flex;
+            justify-content: space-between;
+            padding:0px 16px ;
+        }
+        #dcharge{
+            display: flex;
+            justify-content: space-between;
+            padding:0px 16px ;
+        }
+        #dcharge+p{
+            color: #333333;
+            font-family: 13px ,"system-ui", sans-serif;
+        }
+        #pd{
+            margin: 12px;
+        }
+        span{
+            color: #43A047;
+        }
+        #safe>p{
+            margin: 12px 0px;
+            color: #666666;
+            margin-left: 8px;
+        }
+        #cart{
+        
+          margin-top: -300px;
+          margin-left: 20px;
+           
+        }
+        #cart>div{
+            border: 1px solid gray;
+            display: flex;
+            /* gap: 20px; */
+            width: 828px;
+            height: 216.1px;
+            padding: 12px;
+            margin-bottom: 40px;
+
+        }
+        #title{
+            color:#000000;
+            font-style:14px  Roboto,"system-ui",sans-serif;
+           
+            width: 329px;
+            height: 39px;
+            margin-left: 20px;
+          
+            
+        }
+        
+        #div2{
+           
+            /* height: auto; */
+            text-align: end;
+            margin-right: 200px;
+            
+        }
+       
+        .remove{
+            border: 1px solid gray;
+            width: 450px;
+            height: 30px;
+            background-color: white;
+            color: #1774EF;
+            margin-top: 230px;
+            margin-left: -737px;
+            cursor: pointer;
+           
+            
+         }
+        #btn2{
+            border: 1px solid gray;
+            width: 450px;
+            height: 30px;
+            background-color: white;
+            color: #1774EF;
+            margin-top: 230px;
+            
+         }
+
+         h2{
+            margin-left: 20px;
+         }
+        
+
+       
+     
