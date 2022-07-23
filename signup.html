@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles/header.css">
+    <link rel="stylesheet" href="./styles/footer.css">
+    <title>Document</title>
+    <link rel="stylesheet" href="signup.css">
+</head>
+
+<body>
+    <div id="navbar"></div>
+    <div id="register">
+       <p class="para">Register</p>
+       <hr class="line">
+       <form>
+          <input type="text" placeholder="First Name*" id="firstname">
+          <br><br>
+          <input type="text" placeholder="Last Name*" id="lastname">
+          <br><br>
+          <input type="text" placeholder="Email Address*" id="email">
+          <br><br>
+          <input type="text" placeholder="Password*" id="password">
+          <br><br>
+          <input type="text" placeholder="Confirm Password*" id="confirmpassword">
+          <br><br>
+          <input type="Number" placeholder="Mobile No*" id="mobile">
+       </form>
+       <br><br>
+       <button>Register</button>
+       <div id="char">
+           <p>Already Registered?</p>
+           <a href="login.html" class="login"><p >Login</p></a>
+       </div>
+       
+    </div>
+    <div id= 'footer'></div>
+</body>
+</html>
+<script>
+  
+  document.querySelector("button").addEventListener("click",register);
+    let userdata=JSON.parse(localStorage.getItem("userdatabase"))||[];
+  function register(){
+      let firstname=document.querySelector("#firstname").value;
+      let lastname=document.querySelector("#lastname").value;
+      let email=document.querySelector("#email").value;
+      let password=document.querySelector("#password").value;
+      let confirmpassword=document.querySelector("#confirmpassword").value;
+      let mobile=document.querySelector("#mobile").value;
+      let usercred={
+          fname:firstname,
+          lname:lastname,
+          emailId:email,
+          pass:password,
+          confpass:confirmpassword,
+          mobile:mobile,
+      };
+
+      userdata.push(usercred);
+      localStorage.setItem("userdatabase",JSON.stringify(userdata));
+      window.location.href="login.html";
+
+  }
+</script>
+<script type="module">
+    import footer from "./components/footer.js"
+    import navbar from "./components/navbar.js"
+    document.querySelector("#navbar").innerHTML=navbar();
+    document.querySelector("#footer").innerHTML=footer();
+
+</script>

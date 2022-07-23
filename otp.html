@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>otp</title>
+    <style>
+* {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+
+.container {
+    min-height: 100vh;
+    background-color: #222f3f;
+    display: flex;
+    justify-content: center;
+    align-items: center
+}
+
+.card {
+   
+text-align: center;
+    width: 30%;
+    background-color: white;
+    border-radius: 10px;
+    padding: 20px 15px
+}
+form {
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: repeat(3,1fr);
+    gap: 8px;
+    font-weight: 530;
+}
+form>input {
+    text-align: center;
+    margin: auto;
+    width: 20%;
+    margin-top: -7px;
+    margin-bottom: 9px;
+    border-radius: 6px;
+    border: rgb(47, 2, 89) solid 3px ;
+}
+
+#submit {
+    
+    border-radius: 6px;
+   font-size: large;
+   font-weight: bold;
+    background-color: rgb(49, 6, 90);
+    color: white;
+}
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="card">
+               <h2>Please enter the one time password
+              to verify your account </h2>
+              <form id="form">
+              <label for="">A code has been sent to *******8896</label>
+               <input id='otp' type="text">
+              <input id="submit" type="submit">
+                  </form>
+         </div>
+     </div>
+</body>
+</html>
+<script>
+    let form = document.querySelector('form')
+
+form.addEventListener('submit', mypay);
+let mypay = (event) =>
+{  event.preventDefault();
+  
+    let otp = form.otp.value
+    
+    if(otp=='1234')
+    {
+       alert('Payment Successful')
+    }
+    else{
+        alert('Wrong OTP')
+    }
+}
+</script>

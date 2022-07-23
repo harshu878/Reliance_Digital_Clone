@@ -1,0 +1,277 @@
+#header{
+    width:100%;
+    height: 100px;
+    background-color: rgb(228,37,41);
+    
+}
+.logincart img{
+    
+    height:20px;
+    /* background-color: whitesmoke; */
+}
+.logincart{
+  display:flex;
+}
+.middlebox{    
+    margin:5px;
+    height:65px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    
+}
+.reliancelogo{
+    width:150px;    
+    margin-left: 60px;
+}
+#searchbar{    
+    display: flex;
+}
+#searchbar>input{
+  height: 37px;
+  width:400px;
+  box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+  border: none;
+  border:transparent;
+  border-radius: 40px;
+}
+
+.logincart{
+    display:flex;
+    align-items: center;
+    /* margin-left: 275px; */
+    justify-content: right;  
+    
+
+}
+.lgp{
+    margin-left: 10px;
+    color: whitesmoke;
+    text-align: center;
+}
+
+.location{
+    height:20px;
+    border:none;
+}
+.store{
+    
+    height: 25px;
+    
+    display:flex;
+    margin-left: 10px;
+    color:whitesmoke;
+    align-items: center;
+    
+    justify-content: flex-end;
+    
+    }
+    .locationlogo{
+        height:20px;
+        
+    }
+    .position{
+        margin-right: 20px;
+        align-content: flex-end;
+        
+    }
+    
+    #popupdiv{
+        height: 300px;
+        width: 98%;        
+        border: 1px solid black;
+        margin: auto;
+        margin-top: 0;
+        display: none;
+        position: absolute;
+        background-color: rgb(15,74,137);
+    }
+    
+    
+    
+    .toggledisp{
+        display: none;
+    }
+    .toggledisp>div{
+        display: flex;
+    }
+    .bold{
+        font-weight: bold;
+    }
+    #dropdown{
+        border:1px solid rgb(31,73,133);
+        height:38px;
+        background-color: rgb(31,73,133);
+        margin-bottom: 0;
+    }
+    #dropdown>ul{
+        color:whitesmoke;
+        list-style: none;
+    }
+    .toggledisp>div>div>ul{
+        list-style: none;
+        color: whitesmoke;
+    }
+    #mobandtab>div>ul>a{
+        color:whitesmoke;
+        text-decoration: none;
+        
+    }
+    .toggledisp>div>div>ul>li{
+        margin-bottom: 8px;
+    }
+    header a{
+        color: white;
+        text-decoration: none;
+        display: flex;
+        justify-content: flex-end;
+    }
+    
+   
+
+   
+
+        #footer {
+            background-color: rgb(31,73,133);
+        }
+        .cont1{
+            display: flex;
+            width:100%;
+            height: 350px;
+            
+        
+        }
+        .cont1>div{
+            width:25%;
+            height:350px;
+            
+            color:whitesmoke;
+            padding-left: 40px;
+            padding-top: 10px;
+            
+        
+        }
+        .cont1>div>h4:hover,p:hover{
+            cursor: pointer;
+            color: gray;
+        
+        }
+        h4{
+            font-weight: bolder;
+        }
+        .cont2{
+            
+            width:100%;
+            height:120px;
+            margin-top: 30px;
+            display: flex;
+        }
+        .cont2>div:nth-child(1){
+            width:30%;
+            height:120px;
+            
+            padding-left: 40px;
+            color: whitesmoke;
+        }
+        .cont2>div:nth-child(2){
+            width:70%;
+            height:120px;
+            
+            color: whitesmoke;
+        }
+            #cont3{
+               text-align: center;
+               width:100%;
+               height:40px;
+               
+               color:whitesmoke;
+            }
+            .image{
+                height:50px;
+            }
+            .socialmedialogo{
+                height:30px;
+                margin-right: 10px;
+            
+                
+            }
+
+#cont{
+    border:1px solid silver;
+    border-radius: 8px;
+    height:400px;
+    width:1000px;
+    margin:auto;
+    margin-top: 90px;
+    box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px 2px;
+
+}
+.login{
+    color: black;
+    font-weight: bolder;
+    font-size: 20px;
+    margin-left: 30px;
+}
+form{
+    margin-top: 40px;
+    margin-left: 30px;
+}
+label{
+    color:blue
+}
+input{
+    height:37px;
+    width:400px;
+}
+#forgot>p{
+    margin-left: 320px;
+    font-weight: bolder;
+}
+button{
+    color:whitesmoke;
+    font-weight: bolder;
+    height:39px;
+    width:410px;
+    margin-left: 30px;
+    background-color: rgb(228,37,41);
+    font-size: 20px;
+    border:none;
+    border-radius: 3px;
+
+}
+#char{
+    display: flex;
+    justify-content: center;
+     width:440px;
+}
+.reg{
+    color:rgb(228,37,41);
+    margin-left: 8px;
+    font-weight: bolder;
+    text-decoration: none;
+}
+
+     
+     #main{
+         display:flex;
+     }
+     .box2{
+         
+         height:300px;
+         width:200px;
+         margin-left: 180px;
+         justify-content: center;
+     }
+     .image{
+         width:120px;
+         height:70px;
+     }
+     .box2>p{
+         font-weight: bolder;
+         margin-top: 100px;
+     }
+     .or{
+         margin-left: 130px;
+         margin-top: 130px;
+     }
+     

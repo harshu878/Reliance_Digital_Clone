@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles/header.css">
+    <link rel="stylesheet" href="./styles/footer.css">
+    <title>Document</title>
+    <link rel="stylesheet" href="login.css">
+</head>
+<body>
+    <div id="navbar"></div>
+    <div id="cont">
+    <p class="login">Login</p>
+    <hr>
+    <div id=main>
+    <div class="vertical">
+    <form>
+        <label for="">Email</label>
+        <br>
+        <input type="text" id="email">
+        <br><br>
+        <label for="">Password</label>
+        <br>
+        <input type="text" id="password">
+    </form>
+    <div id="forgot">
+        <p>Forgot password?</p>
+    </div>
+    
+    <button>Continue</button>
+    <div id="char">
+        <p>Don't have an account yet?</p>
+        <a href="Register.html" class="reg"><p>REGISTER</p></a>
+    </div>
+    </div>
+    <div>
+        <p class="or">OR</p>
+    </div>
+ <div class="box2">
+     <p>Login Using</p>
+    <img src="https://static.businessworld.in/article/article_extra_large_image/1553420439_O4KenA_fb.jpeg" alt="" class="image">
+    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRgpALMedi9-917o1f68SR7WMpBm3pPP8LQxA&usqp=CAU" alt="" class="image">
+    </div>
+    </div>
+    </div>
+  <div id="footer"></div>
+    
+</body>
+</html>
+<script>
+  
+  let login = Boolean(localStorage.getItem('login')) || false
+    document.querySelector("button").addEventListener("click",loginfunc);
+    let regduser=JSON.parse(localStorage.getItem("userdatabase"));
+    
+    // function login(){
+    //     let email=document.querySelector("#email").value;
+
+    //     let password=document.querySelector("#password").value;
+
+     
+    //     for(let i=0;i<regduser.length;i++){
+    //         if(regduser[i].emailId===email && regduser[i].pass===password){
+    //             login=true;
+    //             localStorage.setItem('login', login)
+    //             window.location.href="index.html";
+
+    //         }
+    //     }
+    //     if(user_found===false){
+    //     alert("wrong credientials");
+    //     }
+    // }
+
+   
+
+// let users = JSON.parse(localStorage.getItem('users')) || []
+
+let loginfunc= ()=>
+{
+    event.preventDefault()
+    let data = {
+       
+            email:document.querySelector("#email").value,
+         password:document.querySelector("#password").value
+
+    }
+    console.log(data)
+    if(checkEmail(data.email)&& checkPassword(data.password))
+    {
+        
+        login = true
+        localStorage.setItem('login',login)
+        alert('Login successful!')
+    }
+   else if(checkPassword(data.password)===false)
+    {
+        alert("Wrong credentials")
+    }
+    else if(checkEmail(data.email)===false) {
+        alert("User doesn't exist, Sign Up")
+    }
+}
+
+
+let checkEmail= (email) => 
+{
+    let filtered = regduser.filter((element)=>{
+        return email === element.emailId 
+    })
+    if(filtered.length > 0){
+        return true
+    }
+    else{
+        return false
+    }
+}
+function checkPassword(password)
+{
+    let filtered = regduser.filter((element)=>{
+        return password === element.pass 
+    })
+    if(filtered.length > 0){
+        return true
+    }
+    else{
+        return false
+    }
+}
+
+</script>
+<script type="module">
+  import footer from "./components/footer.js"
+    import navbar from "./components/navbar.js"
+    document.querySelector("#navbar").innerHTML=navbar();
+    document.querySelector("#footer").innerHTML=footer();
+</script>
