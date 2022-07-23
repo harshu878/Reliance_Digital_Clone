@@ -162,11 +162,11 @@
             
 
             #navbox{
-                border: 2px solid blue;
+                border: 2px solid #1F4985;
                 height: 50px;
                 display: flex;
                 justify-content: space-around;
-                background-color: blue;
+                background-color: #1F4985;
                 
             }
             .two{
@@ -191,7 +191,7 @@
                  margin-top: 20px;
                  margin-left: 30px;
                  display:none;
-                 background-color: blue;
+                 background-color: #F4985;
             }
             #mobilehover:hover #mobileNavbar{
                 display: flex;
@@ -203,7 +203,7 @@
                 margin-left: 30px;
             }
             #three{
-                background-color: blue;
+                background-color: #1F4985;
                 border: 1px solid red;
                 max-width: 40%;
                 min-width: 30%;
@@ -217,7 +217,7 @@
                  margin-left: 30px;
                  padding: 10px;
                  display: none;
-                 background-color: blue;
+                 background-color: #1F4985;
                  margin-top: 20px;
             }
             #tele:hover #televisionNavbar{
@@ -237,7 +237,7 @@
                 margin-left: 30px;
                 margin-top: 20px;
                  display: none;
-                 background-color: blue;
+                 background-color: #1F4985;
             }
             #headph:hover #headphonesNavbar{
                 display: flex;
@@ -255,7 +255,7 @@
                 width: max-content;
                 margin-left: 30px;
                  display:none;
-                 background-color: blue;
+                 background-color: #1F4985;
                  margin-top: 20px;
             }
             #home:hover #homeNavbar{

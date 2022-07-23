@@ -6,10 +6,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Cart Page</title>
     <link rel="stylesheet" href="cartpages.css">
+    <link rel="stylesheet" href="/components/test.css">
     <link rel = "icon" href ="https://pbs.twimg.com/profile_images/646260852719419392/Ar3oqF39_400x400.png" type = "image/x-icon">
 </head>
 <body>
-
+    <div id="navbar"></div>
+    <div id="nav"></div>
     <div id="cartmain">
         <div><img id="cartimg" src="https://www.reliancedigital.in/medias/Acer-15-Aspire3-R3-Laptop-492849812-i-1-1200Wx1200H?context=bWFzdGVyfGltYWdlc3w1NzA0NzV8aW1hZ2UvanBlZ3xpbWFnZXMvaDIxL2g3NS85ODQxMjI3MzAwODk0LmpwZ3xmZWFjMjg5NzlhMTY5OTZmNDZkYTczZjlmNWY1YmY5YTRhMDVjN2RiZjhiYmM1YTNjNWI1N2QzNmMyNjRlZWYz" alt="">
         </div>
@@ -56,9 +58,22 @@
     </div>
         
  </div>
-    
-    
+
+ <!-- <div id="footer"></div> -->
 </body>
+
 </html>
 
-<script src="/HomePage/scripts/cartpage.js"></script>
+<script src="cartpages.js"></script>
+
+<script type="module">
+    import footer from "./components/footer.js"
+      import navbar from "./components/navbar.js"
+      import navs from "./components/importnav.js"
+      document.querySelector("#navbar").innerHTML=navbar();
+      document.querySelector("#footer").innerHTML=footer();
+      navs().then((data)=>{
+        document.getElementById('nav').innerHTML = data
+      })
+      
+  </script>

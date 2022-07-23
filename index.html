@@ -6,10 +6,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Online Electronic Shopping Store, Reliance Digital</title>
     <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="/components/test.css">
     <link rel = "icon" href ="https://pbs.twimg.com/profile_images/646260852719419392/Ar3oqF39_400x400.png" type = "image/x-icon">
 </head>
 <body>
     <div id="navbar"></div>
+    <div id="nav"></div>
     <div>
         <img src="https://www.reliancedigital.in/medias/Boot-Up-ICICI-Offer-Carousel-Banner-14-07-2022.jpg?context=bWFzdGVyfGltYWdlc3wyNTQ0MDh8aW1hZ2UvanBlZ3xpbWFnZXMvaDgxL2hmNS85ODYxNDY0NjIxMDg2LmpwZ3xmYzQzYzE3MTg1YTk5MjE5OWU4ZTE3ODYzNjU1ZmIxYzg1Mjc0YThjZmMyYWYxNGE2NjRmZjM2OTNkMTI5NDMx" alt="">
         
@@ -446,7 +448,27 @@
                 </div>
             </div>
         </div>
+
+        <div id="footer"></div>
        
 </body>
 </html>
 <script src="index.js"></script>
+
+<script type="module">
+    import footer from "./components/footer.js"
+      import navbar from "./components/navbar.js"
+      import navs from "./components/importnav.js"
+      document.querySelector("#navbar").innerHTML=navbar();
+      document.querySelector("#footer").innerHTML=footer();
+      navs().then((data)=>{
+        document.getElementById('nav').innerHTML = data
+      })
+  </script>
+<script>
+
+import navbar from "./navbar.js"
+document.getElementById("navbar").innerHTML = navbar()
+import footer from "./footer.js"
+document.getElementById("footer").innerHTML = footer()
+</script>
