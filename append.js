@@ -1,7 +1,12 @@
 import navs from "../components/importnav.js"
+import footer from "./components/footer.js"
+import navbar from "./components/navbar.js"
+document.querySelector("#navbar").innerHTML=navbar();
+document.querySelector("#footer").innerHTML=footer();
 
+      
 // <<<<<<<<<<<<<<<<<<change here cart>>>>>>>>>>>>>>>>>>>>>>>>>>>
-let cartpage='nav.html'
+let cartpage='./cart.html'
 
 
 
@@ -103,7 +108,7 @@ function savetocart(el){
      cartArr.push(el)
      
      localStorage.setItem("lakhanlocalstorage",JSON.stringify(cartArr))
-     //window.location.href=cartpage
+     window.location.href=cartpage
 }
 
 
