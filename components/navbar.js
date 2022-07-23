@@ -1,9 +1,8 @@
 
 let login = Boolean(localStorage.getItem('login')) || false
-let regduser=JSON.parse(localStorage.getItem("userdatabase"));
-  
-console.log(regduser[0].fname)
-var fname = regduser[0].fname
+let regduser=JSON.parse(localStorage.getItem("userdatabase")) ||[];
+ 
+if(regduser.length > 0) {var fname = regduser[0].fname}
 let navbar =()=>{
     if(login===true)
     {

@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="./styles/footer.css">
     <title>Document</title>
     <link rel="stylesheet" href="login.css">
+    <link rel="stylesheet" href="./components/test.css">
 </head>
 <body>
     <div id="navbar"></div>
@@ -138,10 +139,13 @@ function checkPassword(password)
 
 </script>
 <script type="module">
-  import footer from "./components/footer.js"
-    import navbar from "./components/navbar.js"
-    import navs from "./components/importnav.js"
-    document.querySelector("#navbar").innerHTML=navbar();
-    document.querySelector("#footer").innerHTML=footer();
-    document.getElementById('nav').innerHTML = navs()
-</script>
+    import footer from "./components/footer.js"
+      import navbar from "./components/navbar.js"
+      import navs from "./components/importnav.js"
+      document.querySelector("#navbar").innerHTML=navbar();
+      document.querySelector("#footer").innerHTML=footer();
+      navs().then((data)=>{
+        document.getElementById('nav').innerHTML = data
+      })
+      
+  </script>
