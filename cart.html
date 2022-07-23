@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reliance Digital Cart</title>
+    <link rel="stylesheet" href="./cart.css">
+    <link rel="stylesheet" href="./components/test.css">
+</head>
+<body>
+   <div id="navbar"></div>
+   <div id="nav"></div>
+   <h2>My Cart</h2>
+   <div id="checkout">
+            
+    <a href="./payment.html"><button id="chkt">CHECKOUT</button></a>
+        
+        <div id="details">
+            <div id="apply">
+                <input type="text" id="Coupon" placeholder="Coupon Code">
+                 <button id="a">Apply</button>
+            </div>
+            
+            <h4 id="pd">PRICE DETAILS</h4>
+            
+            <!-- <h3 id="totamount">AMOUNT PAYABLE</h3> -->
+            <div id="dcharge">
+                <p >Delivery Charge</p>
+                <p id="free">FREE</p>
+            </div>
+            
+           <hr>
+            <div id="pay">
+            <h4>AMOUNT PAYABLE</h4>
+            <h4 id="totamount"></h4>  
+            </div>
+            
+        </div>
+        <div id="safe">
+            <p>Safe and Secure Payments. Easy returns. 100% Authentic products.</p>
+        </div>
+   
+</div>
+   
+    <div id="cart">
+    </div>
+   
+    <div id="button2">
+        
+    </div>
+    
+     <div id="footer"></div>
+</body>
+</html>
+<script src="./cart.js" ></script>
+
+<script type="module">
+    import footer from "./components/footer.js"
+      import navbar from "./components/navbar.js"
+      import navs from "./components/importnav.js"
+      document.querySelector("#navbar").innerHTML=navbar();
+      document.querySelector("#footer").innerHTML=footer();
+      navs().then((data)=>{
+        document.getElementById('nav').innerHTML = data
+      })
+      
+  </script>
