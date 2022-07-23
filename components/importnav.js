@@ -1,4 +1,4 @@
- function navs(){
+async function navs(){
     return ` <div id="navbox">
     <div class="navTitle" id="mobilehover">Mobiles & Tablets
 
