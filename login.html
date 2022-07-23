@@ -33,7 +33,7 @@
     <button>Continue</button>
     <div id="char">
         <p>Don't have an account yet?</p>
-        <a href="Register.html" class="reg"><p>REGISTER</p></a>
+        <a href="signup.html" class="reg"><p>REGISTER</p></a>
     </div>
     </div>
     <div>
@@ -53,9 +53,41 @@
 <script>
   
   let login = Boolean(localStorage.getItem('login')) || false
-    document.querySelector("button").addEventListener("click",loginfunc);
-    let regduser=JSON.parse(localStorage.getItem("userdatabase"));
+  let regduser=JSON.parse(localStorage.getItem("userdatabase"));
     
+
+
+  
+let loginfunc= ()=>
+{
+    event.preventDefault()
+    let data = {
+       
+            email:document.querySelector("#email").value,
+         password:document.querySelector("#password").value
+
+    }
+    console.log(data)
+    if(checkEmail(data.email)&& checkPassword(data.password))
+    {
+        
+        login = true
+        localStorage.setItem('login',login)
+        alert('Login successful!')
+        window.location.href = 'index.html'
+    }
+   else if(checkPassword(data.password)===false)
+    {
+        alert("Wrong credentials")
+    }
+    else if(checkEmail(data.email)===false) {
+        alert("User doesn't exist, Sign Up")
+    }
+}
+
+
+    document.querySelector("button").addEventListener("click",loginfunc);
+
     // function login(){
     //     let email=document.querySelector("#email").value;
 
@@ -78,33 +110,6 @@
    
 
 // let users = JSON.parse(localStorage.getItem('users')) || []
-
-let loginfunc= ()=>
-{
-    event.preventDefault()
-    let data = {
-       
-            email:document.querySelector("#email").value,
-         password:document.querySelector("#password").value
-
-    }
-    console.log(data)
-    if(checkEmail(data.email)&& checkPassword(data.password))
-    {
-        
-        login = true
-        localStorage.setItem('login',login)
-        alert('Login successful!')
-    }
-   else if(checkPassword(data.password)===false)
-    {
-        alert("Wrong credentials")
-    }
-    else if(checkEmail(data.email)===false) {
-        alert("User doesn't exist, Sign Up")
-    }
-}
-
 
 let checkEmail= (email) => 
 {
