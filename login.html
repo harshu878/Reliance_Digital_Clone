@@ -52,35 +52,11 @@
 <script>
   
   let login = Boolean(localStorage.getItem('login')) || false
-    document.querySelector("button").addEventListener("click",loginfunc);
-    let regduser=JSON.parse(localStorage.getItem("userdatabase"));
-    
-    // function login(){
-    //     let email=document.querySelector("#email").value;
-
-    //     let password=document.querySelector("#password").value;
-
-     
-    //     for(let i=0;i<regduser.length;i++){
-    //         if(regduser[i].emailId===email && regduser[i].pass===password){
-    //             login=true;
-    //             localStorage.setItem('login', login)
-    //             window.location.href="index.html";
-
-    //         }
-    //     }
-    //     if(user_found===false){
-    //     alert("wrong credientials");
-    //     }
-    // }
-
-   
-
-// let users = JSON.parse(localStorage.getItem('users')) || []
-
-let loginfunc= ()=>
+  let regduser=JSON.parse(localStorage.getItem("userdatabase"));
+ 
+  let loginfunc= ()=>
 {
-    event.preventDefault()
+   
     let data = {
        
             email:document.querySelector("#email").value,
@@ -103,6 +79,33 @@ let loginfunc= ()=>
         alert("User doesn't exist, Sign Up")
     }
 }
+
+    document.querySelector("button").addEventListener("click",loginfunc);
+   
+   
+
+    // function login(){
+    //     let email=document.querySelector("#email").value;
+
+    //     let password=document.querySelector("#password").value;
+
+     
+    //     for(let i=0;i<regduser.length;i++){
+    //         if(regduser[i].emailId===email && regduser[i].pass===password){
+    //             login=true;
+    //             localStorage.setItem('login', login)
+    //             window.location.href="index.html";
+
+    //         }
+    //     }
+    //     if(user_found===false){
+    //     alert("wrong credientials");
+    //     }
+    // }
+
+   
+
+// let users = JSON.parse(localStorage.getItem('users')) || []
 
 
 let checkEmail= (email) => 

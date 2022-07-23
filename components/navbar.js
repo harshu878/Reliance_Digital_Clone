@@ -1,8 +1,10 @@
-const login = Boolean(localStorage.getItem('login')) || false
-const users = JSON.parse(localStorage.getItem('users')) || []
-if(users.length>0){ const name = users[users.length - 1].name }
 
-let navbar =(name)=>{
+  let login = Boolean(localStorage.getItem('login')) || false
+  let regduser=JSON.parse(localStorage.getItem("userdatabase"));
+ 
+if(regduser.length>0){ const fname = users[users.length - 1].name }
+console.log(fname)
+let navbar =(fname)=>{
     if(login===true)
     {
     return `<div id="header">
@@ -28,7 +30,7 @@ let navbar =(name)=>{
       <a href="./cart.html"><img src="https://www.freepnglogos.com/uploads/shopping-cart-png/shopping-cart-svg-png-icon-download-28.png" alt="" class="lgp">
        <p class="lgp">Cart</p></a>
        <a href="./login.html"> <img src="https://simg.nicepng.com/png/small/136-1366211_group-of-10-guys-login-user-icon-png.png" alt="" class="lgp">
-       <p class="lgp">${name}</p></a>
+       <p class="lgp">${fname}</p></a>
    </div>
    </div>`
 }
