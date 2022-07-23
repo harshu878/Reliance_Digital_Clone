@@ -60,6 +60,7 @@ function append(appenddata){
         let imgdiv=document.createElement("div")
         imgdiv.setAttribute("class",'imgdiv')
         let imag=document.createElement("img")
+        imag.setAttribute("class","five")
         imag.src=el.image
         imgdiv.append(imag)
         

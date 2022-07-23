@@ -6,7 +6,7 @@
     background-color: blue;
     
 }
-a{
+.two{
     color: white;
 }
 .navTitle{
@@ -204,7 +204,7 @@ padding-left: 10px;
         width: 100%;
         /* border: 1px solid blue; */
     }
-    img{
+    .five{
         height: 100%;
         width:100%;
     }

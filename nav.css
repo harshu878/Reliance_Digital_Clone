@@ -6,7 +6,7 @@
     background-color: blue;
     
 }
-a{
+.two{
     color: white;
 }
 .navTitle{
@@ -39,7 +39,7 @@ a{
     color: white;
     margin-left: 30px;
 }
-img{
+#three{
     background-color: blue;
     border: 1px solid red;
     max-width: 40%;
