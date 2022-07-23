@@ -56,7 +56,7 @@ let footer = () => {
        <img src="https://www.reliancedigital.in/build/client/images/ios_app_store_icon.png" alt="" class="image">
     </div>
 </div>
-      <div id="cont3">©2021 Reliance Digital. All Rights Reserved</div>`
+      <div id="cont3">©2022 Reliance Digital. All Rights Reserved</div>`
 
 
 }

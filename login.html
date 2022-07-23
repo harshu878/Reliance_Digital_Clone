@@ -10,7 +10,7 @@
     <link rel="stylesheet" href="login.css">
 </head>
 <body>
-    <header></header>
+    <div id="navbar"></div>
     <div id="cont">
     <p class="login">Login</p>
     <hr>
@@ -45,25 +45,26 @@
     </div>
     </div>
     </div>
-    <footer></footer>
+  <div id="footer"></div>
     
 </body>
 </html>
 <script>
-    //api under construction
-    
-    // document.querySelector("button").addEventListener("click",login);
-    // var regduser=JSON.parse(localStorage.getItem("userdatabase"));
+  
+  let login = Boolean(localStorage.getItem('login')) || false
+    document.querySelector("button").addEventListener("click",loginfunc);
+    let regduser=JSON.parse(localStorage.getItem("userdatabase"));
     
     // function login(){
-    //     var email=document.querySelector("#email").value;
+    //     let email=document.querySelector("#email").value;
 
-    //     var password=document.querySelector("#password").value;
+    //     let password=document.querySelector("#password").value;
 
-    //     let user_found=false;
-    //     for(var i=0;i<regduser.length;i++){
+     
+    //     for(let i=0;i<regduser.length;i++){
     //         if(regduser[i].emailId===email && regduser[i].pass===password){
-    //             user_found=true;
+    //             login=true;
+    //             localStorage.setItem('login', login)
     //             window.location.href="index.html";
 
     //         }
@@ -73,11 +74,66 @@
     //     }
     // }
 
+   
+
+// let users = JSON.parse(localStorage.getItem('users')) || []
+
+let loginfunc= ()=>
+{
+    event.preventDefault()
+    let data = {
+       
+            email:document.querySelector("#email").value,
+         password:document.querySelector("#password").value
+
+    }
+    console.log(data)
+    if(checkEmail(data.email)&& checkPassword(data.password))
+    {
+        
+        login = true
+        localStorage.setItem('login',login)
+        alert('Login successful!')
+    }
+   else if(checkPassword(data.password)===false)
+    {
+        alert("Wrong credentials")
+    }
+    else if(checkEmail(data.email)===false) {
+        alert("User doesn't exist, Sign Up")
+    }
+}
+
+
+let checkEmail= (email) => 
+{
+    let filtered = regduser.filter((element)=>{
+        return email === element.emailId 
+    })
+    if(filtered.length > 0){
+        return true
+    }
+    else{
+        return false
+    }
+}
+function checkPassword(password)
+{
+    let filtered = regduser.filter((element)=>{
+        return password === element.pass 
+    })
+    if(filtered.length > 0){
+        return true
+    }
+    else{
+        return false
+    }
+}
+
 </script>
 <script type="module">
+  import footer from "./components/footer.js"
     import navbar from "./components/navbar.js"
-    import footer from "./components/footer.js"
-    document.querySelector("header").innerHTML=navbar();
-    document.querySelector("footer").innerHTML=footer();
-
+    document.querySelector("#navbar").innerHTML=navbar();
+    document.querySelector("#footer").innerHTML=footer();
 </script>

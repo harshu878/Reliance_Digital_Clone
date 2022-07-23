@@ -33,14 +33,9 @@
   box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
   border: none;
   border:transparent;
-  
+  border-radius: 40px;
 }
-#searchbar>button{
-    background-color:rgb(68,173,251);
-    height:37px;
-    width:100px;
-    border:none;
-}
+
 .logincart{
     display:flex;
     align-items: center;
@@ -79,10 +74,6 @@
         margin-right: 20px;
         align-content: flex-end;
         
-    }
-    #dropdown ul{
-        display: flex;
-        justify-content: space-between;
     }
     
     #popupdiv{
@@ -136,58 +127,7 @@
         justify-content: flex-end;
     }
     
-    @media screen and (min-width:0px) and (max-width: 480px) {
-        header{
-            width: 100%;
-        }
-        .reliancelogo{
-            width:10px;    
-            margin-left: 10px;
-            display: none;
-        }
-        #searchbar>input{
-            height: 20px;
-            width:100px;
-            box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
-            border: none;
-            border:transparent;
-            
-          }
-          #searchbar>button{
-              background-color:rgb(68,173,251);
-              height:20px;
-              width:50px;
-              border:none;
-          }
-          li{
-              font-size: 8px;
-          }
-        
-    }
-    @media screen and (min-width:480px) and (max-width: 1000px){
-        .reliancelogo{
-            width:10px;    
-            margin-right: 10px;
-        }
-        #searchbar>input{
-            height: 20px;
-            width:200px;
-            box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
-            border: none;
-            border:transparent;
-            
-          }
-          #searchbar>button{
-              background-color:rgb(68,173,251);
-              height:20px;
-              width:50px;
-              border:none;
-          }
-          li{
-              font-size: 12px;
-          }
-    }
-
+   
 
    
 

@@ -11,7 +11,7 @@
 </head>
 
 <body>
-    <header></header>
+    <div id="navbar"></div>
     <div id="register">
        <p class="para">Register</p>
        <hr class="line">
@@ -36,39 +36,39 @@
        </div>
        
     </div>
-    <footer></footer>
+    <div id= 'footer'></div>
 </body>
 </html>
 <script>
-    //api under construction
-//   document.querySelector("button").addEventListener("click",register);
-//     var userdata=JSON.parse(localStorage.getItem("userdatabase"))||[];
-//   function register(){
-//       var firstname=document.querySelector("#firstname").value;
-//       var lastname=document.querySelector("#lastname").value;
-//       var email=document.querySelector("#email").value;
-//       var password=document.querySelector("#password").value;
-//       var confirmpassword=document.querySelector("#confirmpassword").value;
-//       var mobile=document.querySelector("#mobile").value;
-//       var usercred={
-//           fname:firstname,
-//           lname:lastname,
-//           emailId:email,
-//           pass:password,
-//           confpass:confirmpassword,
-//           mobile:mobile,
-//       };
+  
+  document.querySelector("button").addEventListener("click",register);
+    let userdata=JSON.parse(localStorage.getItem("userdatabase"))||[];
+  function register(){
+      let firstname=document.querySelector("#firstname").value;
+      let lastname=document.querySelector("#lastname").value;
+      let email=document.querySelector("#email").value;
+      let password=document.querySelector("#password").value;
+      let confirmpassword=document.querySelector("#confirmpassword").value;
+      let mobile=document.querySelector("#mobile").value;
+      let usercred={
+          fname:firstname,
+          lname:lastname,
+          emailId:email,
+          pass:password,
+          confpass:confirmpassword,
+          mobile:mobile,
+      };
 
-//       userdata.push(usercred);
-//       localStorage.setItem("userdatabase",JSON.stringify(userdata));
-//       window.location.href="login.html";
+      userdata.push(usercred);
+      localStorage.setItem("userdatabase",JSON.stringify(userdata));
+      window.location.href="login.html";
 
-//   }
+  }
 </script>
 <script type="module">
     import footer from "./components/footer.js"
     import navbar from "./components/navbar.js"
-    document.querySelector("header").innerHTML=navbar();
-    document.querySelector("footer").innerHTML=footer();
+    document.querySelector("#navbar").innerHTML=navbar();
+    document.querySelector("#footer").innerHTML=footer();
 
 </script>
