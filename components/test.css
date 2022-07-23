@@ -76,41 +76,13 @@
         
     }
     
-    #popupdiv{
-        height: 300px;
-        width: 98%;        
-        border: 1px solid black;
-        margin: auto;
-        margin-top: 0;
-        display: none;
-        position: absolute;
-        background-color: rgb(15,74,137);
-    }
+
     
     
-    
-    .toggledisp{
-        display: none;
-    }
-    .toggledisp>div{
-        display: flex;
-    }
-    .bold{
-        font-weight: bold;
-    }
+
    
-    .toggledisp>div>div>ul{
-        list-style: none;
-        color: whitesmoke;
-    }
-    #mobandtab>div>ul>a{
-        color:whitesmoke;
-        text-decoration: none;
-        
-    }
-    .toggledisp>div>div>ul>li{
-        margin-bottom: 8px;
-    }
+   
+  
     #header a{
         color: white;
         text-decoration: none;
