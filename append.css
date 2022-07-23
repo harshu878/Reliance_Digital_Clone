@@ -1,0 +1,247 @@
+#navbox{
+    border: 2px solid blue;
+    height: 50px;
+    display: flex;
+    justify-content: space-around;
+    background-color: blue;
+    
+}
+a{
+    color: white;
+}
+.navTitle{
+    /* margin-top: 14px; */
+    padding: 14px;
+    color: white;
+    font-family: 'Times New Roman', Times, serif;
+}
+.navTitle:hover{
+    background-color: red;
+    cursor: pointer;
+}
+
+/* <<<<<<<<<<<<<<<<<<<<<Mobile and Tablets>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> */
+#mobileNavbar{
+     border: 2px solid rgb(206, 11, 53);
+     
+     width: max-content;
+     margin-top: 20px;
+     margin-left: 30px;
+     display:none;
+     background-color: blue;
+}
+#mobilehover:hover #mobileNavbar{
+    display: flex;
+    position: absolute;
+}
+
+.smartmobile{
+    color: white;
+    margin-left: 30px;
+}
+#imone{
+    background-color: blue;
+    border: 1px solid red;
+    max-width: 40%;
+    min-width: 30%;
+}
+
+/* <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<Televisions>>>>>>>>>>>> */
+#televisionNavbar{
+    border: 2px solid rgb(206, 11, 53);
+    /* height: 400px; */
+    width:max-content;
+     margin-left: 30px;
+     padding: 10px;
+     display: none;
+     background-color: blue;
+     margin-top: 20px;
+}
+#tele:hover #televisionNavbar{
+    display:flex ;
+    position: absolute;
+}
+.television{
+    color: white;
+    margin-left: 30px;
+}
+
+/* <<<<<<<<<<<<<<<<<<<<headphones>>>>>>>>>>>>>> */
+#headphonesNavbar{
+    border: 2px solid rgb(206, 11, 53);
+    /* height: 400px; */
+    width: max-content;
+    margin-left: 30px;
+    margin-top: 20px;
+     display: none;
+     background-color: blue;
+}
+#headph:hover #headphonesNavbar{
+    display: flex;
+    position: absolute;
+}
+
+.headphones{
+    color: white;
+    margin-left: 30px;
+}
+/* <<<<<<<<<<<<<<<<<<<<<<<HomeApplinces */
+#homeNavbar{
+    border: 2px solid rgb(206, 11, 53);
+    /* height: 400px; */
+    width: max-content;
+    margin-left: 30px;
+     display:none;
+     background-color: blue;
+     margin-top: 20px;
+}
+#home:hover #homeNavbar{
+      display: flex;
+      position: absolute;
+}
+.home{
+    color: white;
+    margin-left: 30px;
+}
+
+
+
+
+
+/* <<<<<<<<<<<<<<<<<<<nav over here>>>>>>> */
+#append{
+
+    /* border: 1px solid red; */
+    /* height: 800px; */
+    display: flex;
+    width: 100%;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 3px 0px, rgba(0, 0, 0, 0.06) 0px 1px 2px 0px;
+    
+}
+#sidebar{
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 3px 0px, rgba(0, 0, 0, 0.06) 0px 1px 2px 0px;
+    /* border: 8px solid rgb(211, 35, 193); */
+    width: 20%;
+}
+#filterdiv{
+    height: 4%;
+    /* border: 1px solid green; */
+    text-align: center;
+}
+#minmax{
+    /* border: 1px solid rebeccapurple; */
+    display: flex;
+    padding: 2%;
+}
+#minprice,#maxprice{
+    width: 30%;
+    margin-left: 10px;
+    font-size: large;
+}
+#minmaxbutton{
+    background-color: blue;
+    font-size: large;
+    color: white;
+    width: 30%;
+    margin-left: 10px;
+    border: none;
+}
+
+.one{
+display: flex;
+/* border: 1px solid red; */
+
+}
+.shadow{
+box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 3px 0px, rgba(0, 0, 0, 0.06) 0px 1px 2px 0px;
+padding-left: 10px;   
+}
+/* <<<<<<<<<<<<<<<<<<<<<<<<<<<<sidebar is over here>>>>>>>>>>>> */
+#showproduct{
+    width: 100%;
+    height: 100%;
+}
+#uppercountbox{
+    /* border: 1px solid blue; */
+    height: 50px;display: flex;
+    width: 100%;
+    justify-content:space-between;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 3px 0px, rgba(0, 0, 0, 0.06) 0px 1px 2px 0px;
+}
+#sortdiv{
+    /* border: 1px solid blue; */
+    margin-right: 30%;
+    padding-top: 1%;
+}
+#productcount{
+    margin-left: 3%;
+}
+/* <<<<<<<<<<<<<<append wala div>>>>>>>>>>>>>>>> */
+    #upperbox{
+        display: grid;
+        grid-template-columns: repeat(4,1fr);
+        /* border: 2px solid green; */
+        gap: 10px;
+    }
+    .mainbox{
+        height: 500px;
+        /* border: 1px solid red; */
+        /* width: max-content; */
+        width: 300px;
+        /* padding-left: 12px; 
+         margin-top: 10px;
+        margin-left: 12px;
+        margin-bottom: 12px; */
+        margin: 20px;
+        box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px 2px;
+    }
+    .lowerdiv{
+        display: flex;
+        
+    }
+    .imgdiv{
+        height: 60%;
+        width: 100%;
+        /* border: 1px solid blue; */
+    }
+    img{
+        height: 100%;
+        width:100%;
+    }
+     .para{
+        color: blue;
+        padding-left: 12px; 
+        height: 7%;
+        overflow: hidden;
+     }
+     .rupees{
+        color: blue;
+        padding-left: 12px; 
+     }
+     .offersavailable{
+        color: green;
+        font-size: 1px;
+        padding-left: 12px; 
+     }
+     .offer{
+        color: green;
+        font-size: 12px;
+        border: none;
+        border-radius: 20px;
+        background-color: rgb(173, 234, 173);
+     }
+    /* .lowerdiv{
+        gap: 30px;
+        padding-top: 30px;
+        padding-left: 20px;
+        font-size: large;
+         
+    } */
+    .com{
+        width: 50%;
+        box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px 2px;
+        font-size: 20px;
+        padding: 10px;
+        
+        margin-top: 30px;
+    }
