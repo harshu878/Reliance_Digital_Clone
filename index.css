@@ -1,3 +1,9 @@
+#deep{
+   width: 100%;
+}
+.change{
+   width: 100%;
+}
 *{
     font-family: "system-ui", sans-serif;
     color: #333340;
