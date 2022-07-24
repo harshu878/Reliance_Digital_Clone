@@ -11,7 +11,7 @@ let navbar =()=>{
        <img src="https://png.pngtree.com/png-vector/20191110/ourlarge/pngtree-location-vector-icon-white-transparent-background-png-image_1978014.jpg" alt="" class="locationlogo">
        <p class="position">Find a store</p>
        <p class="position">Buying Guides</p>
-       <p class="position">Contact Us</p>
+       <p class="position"><a href="./ContactUs.html">Contact us</a></p>
    </div>
    <div class="middlebox">
    <a href="./index.html">
@@ -39,7 +39,7 @@ else{
        <img src="https://png.pngtree.com/png-vector/20191110/ourlarge/pngtree-location-vector-icon-white-transparent-background-png-image_1978014.jpg" alt="" class="locationlogo">
        <p class="position">Find a store</p>
        <p class="position">Buying Guides</p>
-       <p class="position">Contact Us</p>
+       <p class="position"><a href="./ContactUs.html">Contact us</a></p>
    </div>
    <div class="middlebox">
    <a href="./index.html">
