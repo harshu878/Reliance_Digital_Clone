@@ -52,21 +52,21 @@ async function navs(){
         <div id="headphonesNavbar">
             <div class="headphones">
                 <h3>Headphones & Headsets</h3>
-                <h5><a class="two" href="./append.html">Streaming Devices</a>True Wireless</h5>
-                <h5><a class="two" href="./append.html">Streaming Devices</a>Bluetooth Neckbands</h5>
-                <h5><a class="two" href="./append.html">Streaming Devices</a>Wired Earphones</h5>
-                <h5><a class="two" href="./append.html">Streaming Devices</a>On Ear Headphones</h5>
-                <h5><a class="two" href="./append.html">Streaming Devices</a>Noise Cancelling Headphones</h5>
+                <h5><a class="two" href="./append.html">True Wireless</a></h5>
+                <h5><a class="two" href="./append.html">Bluetooth Neckbands</a></h5>
+                <h5><a class="two" href="./append.html">Wired Earphones</a></h5>
+                <h5><a class="two" href="./append.html">On Ear Headphones</a></h5>
+                <h5><a class="two" href="./append.html">Noise Cancelling Headphones</a></h5>
            </div>
            <div class="headphones">
                 <h3>Bluetooth & WiFi Speakers</h3>
-                <h5><a class="two" href="./append.html">Streaming Devices</a>Bluetooth Speakers</h5>
-                <h5><a class="two" href="./append.html">Streaming Devices</a>Smart Speakers</h5>
+                <h5><a class="two" href="./append.html">Bluetooth Speakers</a></h5>
+                <h5><a class="two" href="./append.html">Smart Speakers</a></h5>
             </div>
             <div class="headphones">
                 <h3>TV Speakers & Soundbars</h3>
-                <h5><a class="two" href="./append.html">Streaming Devices</a>Soundbars</h5>
-                <h5><a class="two" href="./append.html">Streaming Devices</a>Smart Speakers</h5>
+                <h5><a class="two" href="./append.html">Soundbars</a></h5>
+                <h5><a class="two" href="./append.html">Smart Speakers</a></h5>
             </div>
           
         </div>
