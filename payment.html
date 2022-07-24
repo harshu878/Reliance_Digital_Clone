@@ -5,32 +5,22 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>paymentPage</title>
-    <style>
-
-* {
+    <style>* {
     margin: 0;
     padding: 0;
     font-family: sans-serif;
-}
-
-.container {
+}.container {
     min-height: 100vh;
-    background-color: #222f3f;
+    background-color: #222F3F
+;
     display: flex;
     justify-content: center;
     align-items: center
-}
-
-.card {
-   
-   
-    width: 30%;
+}.card {    width: 30%;
     background-color: white;
     border-radius: 10px;
     padding: 20px 15px
-}
-
-form {
+}form {
     display: grid;
     grid-template-columns: auto;
     grid-template-rows: repeat(8,1fr);
@@ -42,9 +32,7 @@ h3{
     text-align: center;
     margin-bottom: 20px;
 }
-form>input {
-    
-    margin-top: -7px;
+form>input {    margin-top: -7px;
     margin-bottom: 9px;
     border-radius: 6px;
     border: rgb(47, 2, 89) solid 3px ;
@@ -65,46 +53,38 @@ form>input {
             <div class="top">
                 <h3>Enter Card Details</h3>
                 <hr>
-            </div>
-         
-            <form id="form">
+            </div>            <form id="form">
                 <label for="">Card Number</label>
-                <input type="text" id="cardNumber"  placeholder="0000 0000 0000 0000                                                     💳 " 
-       minlength="16" maxlength="16" size="16"> 
+                <input type="text" id="cardNumber"  placeholder="0000 0000 0000 0000                                                     :credit_card: "
+       minlength="16" maxlength="16" size="16">
                   <label for="">Expiry date</label>
                   <input type="date" id="expdate" placeholder="mm/yyyy" >
                   <label for="">CVV</label>
-                  <input type="number" id= 'cvv' placeholder="000" 
+                  <input type="number" id= 'cvv' placeholder="000"
                   minlength="3" maxlength="3" size="3">
                   <label for="">Card Holder Name</label>
                   <input type="text" placeholder="Enter cardholder's full name" >
                   <hr>
                 <input id="submit" type="submit">
-              </form>
-              
-        </div>
+              </form>        </div>
     </div>
 </body>
 </html>
 <script>
 let form = document.querySelector('form')
-
 form.addEventListener('submit', mypay);
-let mypay=(event) =>
+function mypay(event)
 {  event.preventDefault();
     let cardnumber = form.cardNumber.value
     let expdate = form.expdate.value
-    let cvv = form.cvv.value
-    
-    if(cardnumber=='1234567812345678'&&expdate=='2025-11-11'&&cvv==123)
+    let cvv = form.cvv.value   
+     if(cardnumber=='1234567812345678'&&expdate=='2025-11-11'&&cvv==123)
     {
-       alert('an OTP has been sent to your number')
- 
-    window.location.href = "otp.html";
+       alert('an OTP has been sent to your number') 
+          window.location.href = "otp.html";
     }
     else{
         alert('Wrong card credentials')
     }
 }
-
 </script>

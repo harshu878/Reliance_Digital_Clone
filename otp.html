@@ -73,7 +73,7 @@ form>input {
     let form = document.querySelector('form')
 
 form.addEventListener('submit', mypay);
-let mypay = (event) =>
+function mypay(event)
 {  event.preventDefault();
   
     let otp = form.otp.value
