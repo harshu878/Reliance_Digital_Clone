@@ -1,6 +1,6 @@
-# reliance_digital__clone
+# reliance_digital_clone
 Group Project
-This was our project for Unit-3 Construct week at Masai Shcool. Our target was to complete all main functionality of e-commerce website have, such as sing up to till to the buying of a product. We have completed this project in 5 days.
+This was our project for Unit-3 Construct week at Masai School. Our target was to complete all main functionality of e-commerce website have, from sign up to the placing the order for a product. We have completed this project in 5 days.
 
 Reliance Digital is an Indian electronic products website and E-commerce platform for consumers involved in ordering online. Reliance Digital Retail is a chain of stores that sells consumer electronic appliances. Its products include audio and video devices, digital cameras, durables such as refrigerators, air conditioners, washing machines, microwave ovens, and water purifiers.
 
@@ -21,7 +21,7 @@ JAVASCRIPT
 ## Features:
 _____________
 Login and Sign-in page
-Carouse for product pictures
+Carousel for product pictures
 Detailed product preview page
 Filters for custom price
 Sort functions for Higher to Lower price,Lower to Higher price and Search bar for finding the product by it's name.
