@@ -31,7 +31,7 @@ Add to cart opt for buying products.
 ## Links:
 __________
  Netlify:- 
- https://aquamarine-salmiakki-a58512.netlify.app
+https://reliancedigitalclonemasai.netlify.app/
  
  
 ## Home Page
